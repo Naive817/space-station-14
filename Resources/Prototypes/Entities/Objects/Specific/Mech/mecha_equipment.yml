@@ -31,9 +31,7 @@
   name: air syringe
   description: Gives the mech the ability to inject people with chemicals.
   components:
-  - type: Sprite
-    state: mecha_clamp
-  - type: type: SolutionContainerManager
+  - type: SolutionContainerManager
     solutions:
       injector:
         maxVol: 15

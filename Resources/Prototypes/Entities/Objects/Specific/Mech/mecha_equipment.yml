@@ -24,3 +24,19 @@
   - type: ContainerContainer
     containers:
       item-container: !type:Container
+      
+- type: entity
+  id: MechEquipmentInjector
+  parent: BaseMechEquipment
+  name: air syringe
+  description: Gives the mech the ability to inject people with chemicals.
+  components:
+  - type: Sprite
+    state: mecha_clamp
+  - type: type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: Ephedrine
+          Quantity: 15
